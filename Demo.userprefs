@@ -1,12 +1,14 @@
 ﻿<Properties StartupConfiguration="{E99CA86C-B590-4B49-B6C7-15F9DAD59572}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Demo/index.aspx">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Demo/login.aspx.cs">
     <Files>
-      <File FileName="Demo/login.aspx" Line="1" Column="46" />
-      <File FileName="Demo/login.aspx.cs" Line="1" Column="1" />
-      <File FileName="Demo/generic.html" Line="89" Column="9" />
-      <File FileName="Demo/elements.html" Line="323" Column="10" />
-      <File FileName="Demo/login.aspx.designer.cs" Line="1" Column="1" />
-      <File FileName="Demo/index.aspx" Line="17" Column="55" />
+      <File FileName="Demo/elements.html" Line="316" Column="16" />
+      <File FileName="Demo/wallet.aspx" Line="32" Column="67" />
+      <File FileName="Demo/wallet.aspx.cs" Line="1" Column="1" />
+      <File FileName="Demo/wallet.aspx.designer.cs" Line="19" Column="1" />
+      <File FileName="Demo/profit.aspx" Line="14" Column="33" />
+      <File FileName="Demo/profit.aspx.cs" Line="12" Column="9" />
+      <File FileName="Demo/login.aspx" Line="97" Column="12" />
+      <File FileName="Demo/login.aspx.cs" Line="22" Column="17" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

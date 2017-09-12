@@ -11,14 +11,8 @@
 namespace Demo {
     
     
-    public partial class login {
+    public partial class wallet {
         
         protected System.Web.UI.HtmlControls.HtmlForm form1;
-        
-        protected System.Web.UI.HtmlControls.HtmlInputText account;
-        
-        protected System.Web.UI.HtmlControls.HtmlInputText password;
-        
-        protected System.Web.UI.HtmlControls.HtmlButton login_;
     }
 }

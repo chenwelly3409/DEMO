@@ -21,7 +21,8 @@
                 </div>
             </header>
 
-        <!-- Three -->
+		<form id="form1" runat="server">
+        <!-- login -->
             <section id="three" class="wrapper">
                 <div class="inner">
                     <header class="align-center">
@@ -34,16 +35,17 @@
 						    <p> </p>
                         </div>
                         <div class="4u 12u$(medium)">
-                            <input type="text" name="account" id="account" value="" placeholder="ACCOUNT" />
+                            <input runat="server" type="text" name="account" id="account" value="" placeholder="ACCOUNT" />
                             <br>
-                            <input type="password" name="password" id="password" value="" placeholder="PASSWORD" />
+                            <input runat="server" type="password" name="password" id="password" value="" placeholder="PASSWORD" />
 						    <br>
                             <ul class="actions">
 							    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 							    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                <li><input type="button" class="button" value="登入"/></li>
+                                <li><button id="login_" OnServerClick="login_OnClick" runat="server">登入</button></li>
                                 <li><a href="#" class="button">註冊</a></li>
                             </ul>
+
 						
 					    </div>
                         <div class="4u 12u$(medium)">
@@ -60,7 +62,7 @@
 
                     <h3>Get in touch</h3>
 
-                    <form action="#" method="post">
+
 
                         <div class="field half first">
                             <label for="name">Name</label>
@@ -77,7 +79,7 @@
                         <ul class="actions">
                             <li><input value="Send Message" class="button alt" type="submit"></li>
                         </ul>
-                    </form>
+                    
 
                     <div class="copyright">
                         &copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
@@ -85,7 +87,7 @@
 
                 </div>
             </footer>
-
+            </form>
         <!-- Scripts -->
             <script src="assets/js/jquery.min.js"></script>
             <script src="assets/js/skel.min.js"></script>
