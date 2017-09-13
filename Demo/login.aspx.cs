@@ -9,7 +9,16 @@ namespace Demo
     {
 		protected void Page_Load(object sender, EventArgs e)
 		{
-            //account.Value = "FFFF";
+			if (Convert.ToString(Session["login"]) == "")
+			{
+				//Response.Write("<script>alert('請先登入!'); location.href='Default.aspx'; </script>");
+
+			}
+			else
+			{
+				Response.Write("<script>location.href='profit.aspx'; </script>");
+			}
+
 		}
 
 

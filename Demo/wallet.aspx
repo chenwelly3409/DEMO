@@ -15,7 +15,9 @@
                     <a href="index.aspx" class="logo"><strong>WallStreet </strong> DEMO</a>
                     <nav id="nav">
                         <a href="index.aspx">Home</a>
-                        <a href="login.aspx">Login</a>
+                        <a href="profit.aspx">Profit</a>
+                        <a href="logout.aspx">Logout</a>
+					    
                     </nav>
                     <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
                 </div>
@@ -40,25 +42,25 @@
                             <tbody>
                                 <tr>
                                     <td>BTC</td>
-                                    <td>0.00000</td>
+                                    <td><asp:Label ID="BTC" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>ETH</td>
-                                    <td>0.00000</td>
+                                    <td><asp:Label ID="ETH" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>ZEC</td>
-                                    <td>0.00000</td>
+                                    <td><asp:Label ID="ZEC" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>LTC</td>
-                                    <td>0.00000</td>
+                                    <td><asp:Label ID="LTC" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                             </tbody>
                             <tfoot>
                                 <tr>
                                     <td>總額</td>
-									<td>0.00000</td>
+									<td><asp:Label ID="sum" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                             </tfoot>
                         </table>

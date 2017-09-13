@@ -16,7 +16,7 @@
                     <a href="index.aspx" class="logo"><strong>WallStreet </strong> DEMO</a>
                     <nav id="nav">
                         <a href="index.aspx">Home</a>
-                        <a href="login.aspx">Login</a>
+                        <a href="logout.aspx">Logout</a>
                     </nav>
                     <a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
                 </div>

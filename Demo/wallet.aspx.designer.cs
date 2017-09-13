@@ -9,10 +9,20 @@
 //------------------------------------------------------------------------------
 
 namespace Demo {
-    
-    
-    public partial class wallet {
-        
-        protected System.Web.UI.HtmlControls.HtmlForm form1;
-    }
+	
+	
+	public partial class wallet {
+		
+		protected System.Web.UI.HtmlControls.HtmlForm form1;
+		
+		protected System.Web.UI.WebControls.Label BTC;
+		
+		protected System.Web.UI.WebControls.Label ETH;
+		
+		protected System.Web.UI.WebControls.Label ZEC;
+		
+		protected System.Web.UI.WebControls.Label LTC;
+		
+		protected System.Web.UI.WebControls.Label sum;
+	}
 }
