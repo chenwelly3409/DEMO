@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Web;
 using System.Web.UI;
+using System.IO;
+
 
 namespace Demo
 {
@@ -32,14 +34,51 @@ namespace Demo
 
         }
 
+        protected bool AAAA()
+		{
+			try
+			{   // Open the text file using a stream reader.
+				using (StreamReader sr = new StreamReader("data.json"))
+				{
+					// Read the stream to a string, and write the string to the console.
+					String line = sr.ReadToEnd();
+					string[] DATA = line.Split(',');
+
+                    if( Convert.ToDouble(DATA[0]) == 0.0 && Convert.ToDouble(DATA[1]) == 0.0 &&
+                       Convert.ToDouble(DATA[2]) == 0.0 && Convert.ToDouble(DATA[3]) == 0.0 ) {
+						Response.Write("<script>alert('錢包餘額為0!'); </script>");
+                        return false;
+					}
+                    else{
+                        return true;
+                    }
+
+				}
+			}
+			catch (Exception e)
+			{
+				Console.WriteLine("The file could not be read:");
+				Console.WriteLine(e.Message);
+                return false;
+			}
+
+
+		}
 
         protected void Start_OnClick(object Source, EventArgs e)
         {
 			if (Convert.ToString(Session["start"]) == "" )
 			{
+
+				if (AAAA())
+				{
+					Session["start"] = "GOGO";
+					Start.InnerText = "取消搬磚";
+				}
+
+
 				//Response.Write("<script>alert('請先登入!'); location.href='Default.aspx'; </script>");
-				Session["start"] = "GOGO";
-                Start.InnerText = "取消搬磚";
+				
 
 			}
             else if (Convert.ToString(Session["start"]) != null)
