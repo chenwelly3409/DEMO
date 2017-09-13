@@ -26,12 +26,23 @@ namespace Demo
 		{
             if( account.Value.CompareTo("blockfuture123") == 0 && password.Value.CompareTo("WallStreet666") == 0 ) {
                 Response.Write("<script>alert('登入成功!'); location.href='profit.aspx'; </script>");
-                Session["login"] = "YES";
+                Session["login"] = "blockfuture123";
             }
+			else if (account.Value.CompareTo("blockfuture456") == 0 && password.Value.CompareTo("WallStreet777") == 0)
+			{
+				Response.Write("<script>alert('登入成功!'); location.href='profit.aspx'; </script>");
+				Session["login"] = "blockfuture456";
+			}
+			else if (account.Value.CompareTo("blockfuture789") == 0 && password.Value.CompareTo("WallStreet999") == 0)
+			{
+				Response.Write("<script>alert('登入成功!'); location.href='profit.aspx'; </script>");
+				Session["login"] = "blockfuture789";
+			}
             else{
                 Response.Write("<script>alert('帳號或密碼有誤'); </script>");
             }
 			//
+
 
 		}
 

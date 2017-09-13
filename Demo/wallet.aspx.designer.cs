@@ -24,5 +24,13 @@ namespace Demo {
 		protected System.Web.UI.WebControls.Label LTC;
 		
 		protected System.Web.UI.WebControls.Label sum;
+		
+		protected System.Web.UI.WebControls.Label BTC_in;
+		
+		protected System.Web.UI.WebControls.Label ETH_in;
+		
+		protected System.Web.UI.WebControls.Label ZEC_in;
+		
+		protected System.Web.UI.WebControls.Label LTC_in;
 	}
 }

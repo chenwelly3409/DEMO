@@ -34,11 +34,11 @@ namespace Demo
 
         }
 
-        protected bool AAAA()
+        protected bool AAAA(string name)
 		{
 			try
 			{   // Open the text file using a stream reader.
-				using (StreamReader sr = new StreamReader("data.json"))
+				using (StreamReader sr = new StreamReader(name + ".json"))
 				{
 					// Read the stream to a string, and write the string to the console.
 					String line = sr.ReadToEnd();
@@ -69,8 +69,22 @@ namespace Demo
         {
 			if (Convert.ToString(Session["start"]) == "" )
 			{
+                string temp = "";
 
-				if (AAAA())
+				if (Convert.ToString(Session["login"]) == "blockfuture123")
+				{
+					temp = "blockfuture123";
+				}
+				else if (Convert.ToString(Session["login"]) == "blockfuture456")
+				{
+                    temp = "blockfuture456";
+				}
+				else if (Convert.ToString(Session["login"]) == "blockfuture789")
+				{
+                    temp = "blockfuture789";
+				}
+
+				if (AAAA(temp))
 				{
 					Session["start"] = "GOGO";
 					Start.InnerText = "取消搬磚";

@@ -85,19 +85,19 @@
                             <tbody>
                                 <tr>
                                     <td>BTC</td>
-                                    <td>1PA58hjHVATxqLRM5yzXw8xdhiT7effiwu</td>
+                                    <td><asp:Label ID="BTC_in" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>ETH</td>
-                                    <td>0x0b067b1bf04c8044fdcaaa4b90318cf96b4d6143</td>
+                                    <td><asp:Label ID="ETH_in" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>ZEC</td>
-                                    <td>LPzjgZr5HGDNUKkyj61j5Md6xruGn5CiYT</td>
+                                    <td><asp:Label ID="ZEC_in" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                                 <tr>
                                     <td>LTC</td>
-                                    <td>t1KADDMNSPpt8NMdbe1icqUZRmZMYqb1AAZ</td>
+                                    <td><asp:Label ID="LTC_in" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                             </tbody>
                             <tfoot>

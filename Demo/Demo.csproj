@@ -146,7 +146,9 @@
     <None Include="CREDITS.txt" />
     <None Include="LICENSE.txt" />
     <None Include="images\.DS_Store" />
-    <None Include="data.json" />
+    <None Include="blockfuture123.json" />
+    <None Include="blockfuture789.json" />
+    <None Include="blockfuture456.json" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions>

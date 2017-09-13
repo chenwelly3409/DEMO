@@ -23,15 +23,40 @@ namespace Demo
 			}
 			else
 			{
-                file();
+
+                if (Convert.ToString(Session["login"]) == "blockfuture123") {
+                    file("blockfuture123");
+                    BTC_in.Text = "1PA58hjHVATxqLRM5yzXw8xdhiT7effiwu";
+                    ETH_in.Text = "0x0b067b1bf04c8044fdcaaa4b90318cf96b4d6143";
+                    ZEC_in.Text = "LPzjgZr5HGDNUKkyj61j5Md6xruGn5CiYT";
+                    LTC_in.Text = "t1KADDMNSPpt8NMdbe1icqUZRmZMYqb1AAZ";
+                }
+				else if (Convert.ToString(Session["login"]) == "blockfuture456")
+				{
+					file("blockfuture456");
+					BTC_in.Text = "1Q3GUm3xEXp5PPzVf4EfApGuYEbmCgHcwv";
+					ETH_in.Text = "0x7aeb6caa2783740e06077ed179a4b699613d001a";
+					ZEC_in.Text = "t1PSQG6HAnUxTFbdsNJuGvMp2g6XuiS7jAZ";
+					LTC_in.Text = "Las7242G75zB9pMepcuofwgRm3FAWvLeun";
+				}
+				else if (Convert.ToString(Session["login"]) == "blockfuture789")
+				{
+					file("blockfuture789");
+					BTC_in.Text = "14K1d771FV85qwJVMr6otpTCU8BpbL5gEb";
+					ETH_in.Text = "0x1a5cfb5408686c6559ee8c37a9a1ea35f712b366";
+					ZEC_in.Text = "LiCJ2abZQjLgHjH5xBVYkCBeoKKLG9pjLm";
+					LTC_in.Text = "t1Wxmob5YHv8YUN8sRCptQgFjsx3u6kwXzA";
+				}
+
+
 			}
 
 		} // Pg_load
 
-        protected void file(){
+        protected void file(string name){
 			try
 			{   // Open the text file using a stream reader.
-				using (StreamReader sr = new StreamReader("data.json"))
+				using (StreamReader sr = new StreamReader(name+".json"))
 				{
 					// Read the stream to a string, and write the string to the console.
 					String line = sr.ReadToEnd();
