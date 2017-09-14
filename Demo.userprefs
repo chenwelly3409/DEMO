@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{E99CA86C-B590-4B49-B6C7-15F9DAD59572}|">
   <MonoDevelop.Ide.Workbench ActiveDocument="Demo/wallet.aspx">
     <Files>
-      <File FileName="Demo/wallet.aspx.cs" Line="32" Column="39" />
-      <File FileName="Demo/wallet.aspx" Line="149" Column="37" />
+      <File FileName="Demo/wallet.aspx.cs" Line="40" Column="73" />
+      <File FileName="Demo/wallet.aspx" Line="154" Column="60" />
       <File FileName="Demo/blockfuture123.json" Line="1" Column="2" />
       <File FileName="Demo/login.aspx.cs" Line="30" Column="14" />
       <File FileName="Demo/profit.aspx" Line="50" Column="110" />
