@@ -23,8 +23,6 @@ namespace Demo {
 		
 		protected System.Web.UI.WebControls.Label LTC;
 		
-		protected System.Web.UI.WebControls.Label sum;
-		
 		protected System.Web.UI.WebControls.Label BTC_in;
 		
 		protected System.Web.UI.WebControls.Label ETH_in;
@@ -32,5 +30,7 @@ namespace Demo {
 		protected System.Web.UI.WebControls.Label ZEC_in;
 		
 		protected System.Web.UI.WebControls.Label LTC_in;
+		
+		protected System.Web.UI.HtmlControls.HtmlTable history;
 	}
 }

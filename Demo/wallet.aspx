@@ -59,8 +59,6 @@
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>總額</td>
-									<td><asp:Label ID="sum" runat="server" Text="0.00"></asp:Label></td>
                                 </tr>
                             </tfoot>
                         </table>
@@ -118,8 +116,30 @@
 						<h2>DEMO狀態無法申請，請聯絡我們取款</h2>
                     </header>
 
-					
-                    
+                    <hr class="major" />
+
+                    <header class="align-center">
+                        <h3>History 交易紀錄</h3>
+                        <p></p>
+                    </header>
+
+                    <div class="table-wrapper" style="width:75%;margin:0px auto;">
+                        <table runat="server" id="history">
+                            <thead>
+                                <tr>
+                                    <th>時間</th>
+                                    <th>利潤</th>
+									<th>狀態</th>
+									<th>數量</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+
+
                 </div>
             </section>
 
