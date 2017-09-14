@@ -27,10 +27,10 @@ namespace Demo
                 if (Convert.ToString(Session["login"]) == "blockfuture123") {
                     //file("blockfuture123");
                     BTC.Text = "0.00";
-                    ETH.Text = "0.00";
+                    ETH.Text = "2.985800";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
-                    sum.Text = "0.00";
+                   // sum.Text = "0.00";
                     BTC_in.Text = "1PA58hjHVATxqLRM5yzXw8xdhiT7effiwu";
                     ETH_in.Text = "0x0b067b1bf04c8044fdcaaa4b90318cf96b4d6143";
                     ZEC_in.Text = "LPzjgZr5HGDNUKkyj61j5Md6xruGn5CiYT";
@@ -43,7 +43,7 @@ namespace Demo
                     ETH.Text = "0.00";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
-                    sum.Text = "0.00";
+                   // sum.Text = "0.00";
                     BTC_in.Text = "1Q3GUm3xEXp5PPzVf4EfApGuYEbmCgHcwv";
 					ETH_in.Text = "0x7aeb6caa2783740e06077ed179a4b699613d001a";
 					ZEC_in.Text = "t1PSQG6HAnUxTFbdsNJuGvMp2g6XuiS7jAZ";
@@ -56,7 +56,7 @@ namespace Demo
                     ETH.Text = "0.00";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
-                    sum.Text = "0.999000 BTC";
+                    //sum.Text = "0.999000 BTC";
                     BTC_in.Text = "1Ep1rfnDdXzDxTkSdYSrrbgHft34uJCMna";
 					ETH_in.Text = "0x1a5cfb5408686c6559ee8c37a9a1ea35f712b366";
 					ZEC_in.Text = "LiCJ2abZQjLgHjH5xBVYkCBeoKKLG9pjLm";

@@ -59,8 +59,7 @@
                             </tbody>
                             <tfoot>
                                 <tr>
-                                    <td>總額</td>
-									<td><asp:Label ID="sum" runat="server" Text="0.00"></asp:Label></td>
+                                    
                                 </tr>
                             </tfoot>
                         </table>
