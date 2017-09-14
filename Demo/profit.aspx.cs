@@ -36,12 +36,15 @@ namespace Demo
 
         protected bool AAAA(string name)
 		{
-			try
+            System.Diagnostics.Debug.WriteLine(name);
+            try
 			{   // Open the text file using a stream reader.
-				using (StreamReader sr = new StreamReader(name + ".json"))
+                string ss = name + ".json";
+				using (StreamReader sr = new StreamReader(@"~/blockfuture123.json"))
 				{
-					// Read the stream to a string, and write the string to the console.
-					String line = sr.ReadToEnd();
+                    System.Diagnostics.Debug.WriteLine(sr);
+                    // Read the stream to a string, and write the string to the console.
+                    String line = sr.ReadToEnd();
 					string[] DATA = line.Split(',');
 
                     if( Convert.ToDouble(DATA[0]) == 0.0 && Convert.ToDouble(DATA[1]) == 0.0 &&
@@ -69,27 +72,8 @@ namespace Demo
         {
 			if (Convert.ToString(Session["start"]) == "" )
 			{
-                string temp = "";
-
-				if (Convert.ToString(Session["login"]) == "blockfuture123")
-				{
-					temp = "blockfuture123";
-				}
-				else if (Convert.ToString(Session["login"]) == "blockfuture456")
-				{
-                    temp = "blockfuture456";
-				}
-				else if (Convert.ToString(Session["login"]) == "blockfuture789")
-				{
-                    temp = "blockfuture789";
-				}
-
-				if (AAAA(temp))
-				{
-					Session["start"] = "GOGO";
-					Start.InnerText = "取消搬磚";
-				}
-
+				Session["start"] = "GOGO";
+				Start.InnerText = "取消搬磚";
 
 				//Response.Write("<script>alert('請先登入!'); location.href='Default.aspx'; </script>");
 				
