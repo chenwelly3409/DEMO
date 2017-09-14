@@ -51,13 +51,17 @@ namespace Demo
 				{
                     //file("blockfuture456");
                     BTC.Text = "0.00";
-                    ETH.Text = "0.00";
+                    ETH.Text = "20.00";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
                     BTC_in.Text = "1Q3GUm3xEXp5PPzVf4EfApGuYEbmCgHcwv";
 					ETH_in.Text = "0x7aeb6caa2783740e06077ed179a4b699613d001a";
 					ZEC_in.Text = "t1PSQG6HAnUxTFbdsNJuGvMp2g6XuiS7jAZ";
 					LTC_in.Text = "Las7242G75zB9pMepcuofwgRm3FAWvLeun";
+
+					addHistory("2017/9/14 1:03", "匯入", "成功", "20.0000 ETH");
+
+
 				}
 				else if (Convert.ToString(Session["login"]) == "blockfuture789")
 				{
