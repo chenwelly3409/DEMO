@@ -28,7 +28,7 @@ namespace Demo
                 if (Convert.ToString(Session["login"]) == "blockfuture123") {
                     //file("blockfuture123");
                     BTC.Text = "0.00";
-                    ETH.Text = "2.985800";
+                    ETH.Text = "2.9917716";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
                     BTC_in.Text = "1PA58hjHVATxqLRM5yzXw8xdhiT7effiwu";
@@ -62,7 +62,7 @@ namespace Demo
 				else if (Convert.ToString(Session["login"]) == "blockfuture789")
 				{
                     //file("blockfuture789");
-                    BTC.Text = "0.999000";
+                    BTC.Text = "1.000980";
                     ETH.Text = "0.00";
                     ZEC.Text = "0.00";
                     LTC.Text = "0.00";
